@@ -1,0 +1,36 @@
+# Decisões técnicas
+
+## Stack escolhida
+
+- vite
+- react
+- typescript
+
+### Motivo
+app mobile, offline-first, sem necessidade de SSR
+
+---
+
+## Não usar Next.js
+
+### Motivo
+complexidade desnecessária para o MVP
+
+---
+
+## Persistência
+
+- usar Dexie (IndexedDB)
+- evitar localStorage como principal
+
+### Motivo
+escalabilidade e estrutura melhor
+
+---
+
+## Estado
+
+- zustand
+
+### Motivo
+simples, leve e sem boilerplate
