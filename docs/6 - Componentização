@@ -1,0 +1,12 @@
+Separando o código em partes reutilizáveiso problema que estamos resolvendo
+
+seu App hoje faz tudo: {
+    título
+    contador
+    texto
+    botão
+    lógica
+
+    ainda está pequeno, então ok
+    mas isso escala muito mal
+}
