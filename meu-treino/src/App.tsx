@@ -9,15 +9,26 @@ function App() {
     !isTraining && setTreinosFeitos(prev => prev + 1);
   }
 
+  type trainButtonProps = {
+    isTraining: boolean,
+    onClick: () => void
+  }
+
+  function TrainButton({ isTraining, onClick }: trainButtonProps) {
+    return (
+      <button onClick={onClick}>
+        {isTraining ? "Parar" : "Treinar"}
+      </button>
+    );
+  }
+
   return (
     <div>
       <h1>Meu treino</h1>
       {treinosFeitos > 0 && <h2>Treinos feitos: {treinosFeitos}</h2>}
 
       <p>{isTraining ? "Treino em andamento" : "Você não está treinando"}</p>
-      <button onClick={handleTrainButton}>
-        {isTraining ? "Parar" : "Treinar"}
-      </button>
+      <TrainButton isTraining={isTraining} onClick={handleTrainButton}/>
     </div>
   );
 }

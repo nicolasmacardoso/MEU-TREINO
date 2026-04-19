@@ -14,26 +14,26 @@ Isso é o coração do React.
 ___________________________________________________________________________
 
 EXEMPLO MÍNIMO {
-    import { useState } from "react";
+    import { useState } from "React";
 
     function App() {
-    const [isTraining, setIsTraining] = useState(false);
+        const [isTraining, setIsTraining] = useState(false);
 
-    function handleTrainButton() {
-        setIsTraining(true);
-    }
+        function handleTrainButton() {
+            setIsTraining(true);
+        }
 
-    return (
-        <div>
-        <h1>Meu treino</h1>
+        return (
+            <div>
+            <h1>Meu treino</h1>
 
-        {isTraining ? (
-            <p>Treino iniciado</p>
-        ) : (
-            <button onClick={handleTrainButton}>Treinar</button>
-        )}
-        </div>
-    );
+            {isTraining ? (
+                <p>Treino iniciado</p>
+            ) : (
+                <button onClick={handleTrainButton}>Treinar</button>
+            )}
+            </div>
+        );
     }
 
     export default App;
@@ -103,7 +103,8 @@ useState e Desestruturação {
 
     👉 isTraining não é uma variável comum
     👉 é um “snapshot” do estado naquele render (ele é uma "foto" do valor naquele momento da execução)
-    Como o recat funciona {
+    
+    Como o React funciona {
         toda vez que o componente roda:
 
         function App() {
@@ -188,15 +189,15 @@ RENDERIZAÇÃO NO REACT {
         setIsTraining(true);
         - não muda imediatamente
         - avisa o React: "estado mudou"
-        - react agenda re-renderiza
-        - react executa o componente de novo
+        - React agenda re-renderização
+        - React executa o componente de novo
         - novo valor é usado
 
         DETALHE IMPORTANTE !! 
         -> setState não é síncrono
         setIsTraining(true);
         console.log(isTraining); -> ainda pode imprimir false
-        porque a atualização ainda não aconteceu, react vai atualizar depois
+        porque a atualização ainda não aconteceu, React vai atualizar depois
     }
 
     4 - Ordem de execução de um componente {
@@ -220,7 +221,7 @@ RENDERIZAÇÃO NO REACT {
 
     React funciona como um modelo baseado em disparo explícito.
     - o sinal é enviado (setState)
-    - react reage.
+    - React reage.
     não existe
     - watcher
     - proxy automático (igual Vue moderno)
@@ -233,7 +234,7 @@ RENDERIZAÇÃO NO REACT {
     toda vez que o componente roda:
 
     function App() {
-    let x = 0;
+        let x = 0;
     }
 
     - x é recriado do zero
