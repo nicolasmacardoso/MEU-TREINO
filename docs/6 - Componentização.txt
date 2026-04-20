@@ -1,6 +1,7 @@
-Separando o código em partes reutilizáveiso problema que estamos resolvendo
+Separando o código em partes reutilizáveis 
 
-seu App hoje faz tudo: {
+o problema que estamos resolvendo:
+o App hoje faz tudo: {
     título
     contador
     texto
