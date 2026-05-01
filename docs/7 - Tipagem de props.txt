@@ -15,7 +15,7 @@ O problema que o TypeScript resolve {
 
     exemplo com tipo
     function soma(a: number, b: number) {
-    return a + b;
+        return a + b;
     }
 
     soma("1", 2);

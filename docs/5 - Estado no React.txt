@@ -167,6 +167,7 @@ RENDERIZAÇÃO NO REACT {
         function handleClick () {
             isTraining = true;
         } 
+        
         isso NÃO funciona
         - o React não "observa" variáveis comuns
         - não sabe que algo mudou

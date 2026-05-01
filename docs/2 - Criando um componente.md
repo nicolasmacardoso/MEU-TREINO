@@ -1,3 +1,4 @@
+  ```js
 Escrevendo e entendendo o código básico
 
 _________________________________________________

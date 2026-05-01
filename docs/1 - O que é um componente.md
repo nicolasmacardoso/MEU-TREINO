@@ -1,3 +1,4 @@
+  ```js
 O que é um componente
 
 -> Uma função que retorna algo para aparecer na tela
